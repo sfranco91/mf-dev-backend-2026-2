@@ -32,7 +32,9 @@ cess">Adicionar novo veiculo</a>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+                <td>
+                    <a 
+                       asp-action="Relatorio" asp-route-id="@item.Id">@item.Nome</a>
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
